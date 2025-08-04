@@ -2,10 +2,10 @@ import xmlrpc.client
 import os
 
 # Paramètres Odoo (à adapter selon l'environnement)
-ODOO_URL = os.getenv('ODOO_URL', 'https://afrocare.odoo.com')
-ODOO_DB = os.getenv('ODOO_DB', 'afrocare')
-ODOO_USERNAME = os.getenv('ODOO_USERNAME', 'ghygi.paradisco@gmail.com')
-ODOO_PASSWORD = os.getenv('ODOO_PASSWORD', 'Afrocarista123@')
+ODOO_URL = os.getenv('ODOO_URL', '')
+ODOO_DB = os.getenv('ODOO_DB', '')
+ODOO_USERNAME = os.getenv('ODOO_USERNAME', '')
+ODOO_PASSWORD = os.getenv('ODOO_PASSWORD', '')
 
 # 1. Connexion initiale (authentification)
 common = xmlrpc.client.ServerProxy(f'{ODOO_URL}/xmlrpc/2/common')
